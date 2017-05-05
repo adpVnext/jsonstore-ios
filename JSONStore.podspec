@@ -17,15 +17,10 @@ Pod::Spec.new do |s|
   
   s.source       = { :git => 'https://github.com/ibm-bluemix-mobile-services/jsonstore-ios.git', :tag => '1.3.0'}
 
-
-
   s.source_files  = 'JSONStore', 'JSONStore/**/*.{h,m}'
   s.exclude_files = 'JSONStore/Exclude'
-
   s.requires_arc = true
-
-  s.module_map = 'module.modulemap'
-
-  
+  s.module_map = 'JSONStore.modulemap'
+  s.library = 'sqlite3' 
 
 end
